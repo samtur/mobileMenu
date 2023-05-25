@@ -96,7 +96,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-rows: 10% 80% 10%;
-    grid-template-columns: 30% 40% 30%;
+    grid-template-columns: 40% 20% 40%;
 }
 
 #content {
@@ -110,6 +110,9 @@ body {
 #head {
     grid-row: 1/2;
     border: 1px black solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #body {
@@ -120,4 +123,18 @@ body {
 #footer {
     grid-row: 3/4;
     border: 1px black solid;
+}
+
+/* Head */
+.homeIcon,
+.searchIcon,
+.menuIcon {
+    width: max-content;
+    height: max-content;
+}
+
+.icon {
+    width: 3em;
+    height: 3em;
+    filter: invert(0%) sepia(100%) saturate(5%) hue-rotate(227deg) brightness(94%) contrast(100%);
 }
