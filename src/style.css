@@ -87,6 +87,12 @@ video {
     vertical-align: baseline;
 }
 
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -137,4 +143,24 @@ body {
     width: 3em;
     height: 3em;
     filter: invert(0%) sepia(100%) saturate(5%) hue-rotate(227deg) brightness(94%) contrast(100%);
+}
+
+/* Body */
+#body {
+    display: grid;
+    grid-template-rows: 90% 10%;
+    justify-items: end;
+    align-items: center;
+}
+
+#plusbtn {
+    margin: 0.4rem;
+    grid-row: 2/3;
+    border: solid black 1px;
+    border-radius: 50%;
+    font-size: 3em;
+    width: 0.9em;
+    height: 0.9em;
+    text-align: center;
+    line-height: 0.9em;
 }
