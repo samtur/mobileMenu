@@ -112,6 +112,10 @@ body {
     grid-template-rows: 10% 80% 10%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Menu Content */
 #head {
     grid-row: 1/2;
@@ -150,7 +154,7 @@ body {
     display: grid;
     grid-template-rows: 90% 10%;
     justify-items: end;
-    align-items: center;
+    align-items: end;
 }
 
 #plusbtn {
@@ -165,6 +169,29 @@ body {
     line-height: 0.9em;
 }
 
-ul {
+/* Icon menu */
+.optionsMenu {
+    grid-row: 1/2;
+}
+
+#options {
+    font-size: 1.5em;
     list-style: none;
+    margin: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.opt {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    justify-content: end;
+    cursor: pointer;
+}
+
+.optIcon {
+    width: 1.5em;
+    height: 1.5em;
 }
