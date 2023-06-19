@@ -169,6 +169,10 @@ body {
     line-height: 0.9em;
 }
 
+.toggle::before {
+    content: "+";
+}
+
 /* Icon menu */
 .optionsMenu {
     grid-row: 1/2;
