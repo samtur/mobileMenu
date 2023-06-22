@@ -3,16 +3,16 @@ const menu = () => {
   const menuBtn = document.querySelector("#plusbtn");
 
   menuBtn.addEventListener("click", function () {
+    menu.classList.remove("hidden");
     if (menuBtn.classList.contains("active")) {
       menuBtn.classList.remove("active");
     } else {
       menuBtn.classList.add("active");
     }
-
-    if (menu.classList.contains("hidden")) {
-      menu.classList.remove("hidden");
+    if (menu.classList.contains("active")) {
+      menu.classList.remove("active");
     } else {
-      menu.classList.add("hidden");
+      menu.classList.add("active");
     }
   });
 };
