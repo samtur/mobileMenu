@@ -93,17 +93,38 @@ button {
 }
 
 
+
+/* Font Face */
+
+@font-face {
+    font-family: "RobotoMonoLight";
+    src: url('RobotoMono-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "RobotoMonoExtraLight";
+    src: url('RobotoMono-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+}
+
 * {
     box-sizing: border-box;
 }
 
+
 body {
+    font-family: "RobotoMonoLight";
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-rows: 10% 80% 10%;
     grid-template-columns: 10% 80% 10%;
+
 }
+
+
+
 
 /* stopping animations */
 .hidden {
